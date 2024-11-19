@@ -7,11 +7,29 @@ body {
   }
   
   header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el texto */
+    position: relative; /* Permite que el logo esté alineado a la izquierda */
     background-color: #0066cc;
     color: white;
     padding: 1rem;
-    text-align: center;
+    height: 80px; /* Altura fija para el header */
   }
+  
+  .logo {
+    position: absolute;
+    left: 1rem; /* Alinea el logo totalmente a la izquierda */
+    height: 60px;
+    width: auto;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center; /* Centra el texto en su contenedor */
+  }
+    
   
   main {
     padding: 2rem;
